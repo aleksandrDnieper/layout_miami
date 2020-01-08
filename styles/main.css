@@ -58,7 +58,7 @@ strong {
             align-items: center; } }
 
 .header {
-  height: 765px;
+  height: 70vh;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
@@ -90,15 +90,19 @@ strong {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
     text-transform: uppercase; }
+  .header__link:hover {
+    color: #d5c5aa; }
 
 @media screen and (max-width: 999px) {
-  .header__top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .header__phone {
-    margin: -30px 0 10px; } }
+  .header {
+    max-height: 70vh; }
+    .header__top {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .header__phone {
+      margin: -30px 0 10px; } }
 
 .logo {
   width: 115px;
@@ -110,7 +114,7 @@ strong {
 
 .section {
   position: relative;
-  padding: 100px calc(50% - 470px);
+  padding: 9vh calc(50% - 470px);
   background: #fff; }
   .section:nth-child(even) {
     background-color: #eee; }
@@ -122,7 +126,7 @@ strong {
 
 @media screen and (max-width: 999px) {
   .section {
-    padding: 40px; } }
+    padding: 9vh; } }
 
 .info {
   display: -webkit-box;
@@ -210,11 +214,32 @@ strong {
     .photos__img--short {
       width: calc(33% - 12px); }
 
+@media screen and (max-width: 999px) {
+  .photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .photos__img {
+      width: 90vw;
+      height: 30vh;
+      margin: 1%; } }
+
 .gallery__caption {
   margin: 12px 0 35px; }
 
 .gallery__button {
   margin: 44px auto 0; }
+
+@media screen and (max-width: 999px) {
+  .gallery {
+    text-align: center; }
+    .gallery__caption {
+      margin: 1vh auto; } }
 
 .button {
   display: block;
@@ -293,6 +318,10 @@ strong {
     color: inherit; }
   .input__textarea {
     height: 160px; }
+
+.input:focus {
+  outline: none;
+  border: 1px solid #00aaef; }
 
 .testimonials {
   display: grid;
