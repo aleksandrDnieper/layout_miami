@@ -126,7 +126,7 @@ strong {
 
 @media screen and (max-width: 999px) {
   .section {
-    padding: 9vh; } }
+    padding: 9vh 2vh; } }
 
 .info {
   display: -webkit-box;
