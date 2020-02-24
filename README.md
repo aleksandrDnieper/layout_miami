@@ -1,3 +1,3 @@
 Miami landing page
-===================
-Link - https://<your_account>.github.io/layout_miami/
+==============
+Maimi landing page Demo link - https://aleksandrDnieper.github.io/layout_miami/
