@@ -117,19 +117,19 @@ strong {
 
 .section {
   position: relative;
-  padding: 9vh calc(50% - 470px);
+  padding: 12vh calc(50% - 470px) 10vh;
   background: #fff; }
   .section:nth-child(even) {
     background-color: #eee; }
   .section__heading {
     left: 0;
     right: 0;
-    top: 0;
+    top: 0.5em;
     margin: auto; }
 
 @media screen and (max-width: 999px) {
   .section {
-    padding: 9vh 2vh; } }
+    padding: 10vh 2vh 5vh; } }
 
 .info {
   display: -webkit-box;
